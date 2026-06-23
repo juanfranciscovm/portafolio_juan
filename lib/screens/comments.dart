@@ -71,13 +71,14 @@ class _CommentsState extends State<Comments> {
                   "Leave a\ncomment!",
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontFamily: "Newake",
                     color: Colors.white,
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
 
-                const SizedBox(height: 60),
+                const SizedBox(height: 40),
 
                 InputTemplate(
                   labelTextValue: "Nombre",

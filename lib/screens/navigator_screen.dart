@@ -22,6 +22,8 @@ class _NavigatorState extends State<NavigatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
+      backgroundColor: const Color.fromARGB(255, 7, 17, 57),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
