@@ -29,7 +29,7 @@ class _NavigatorState extends State<NavigatorScreen> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             colors: [
-              Color.fromARGB(255, 36, 52, 118),
+              Color.fromARGB(255, 52, 114, 173),
               Color.fromARGB(255, 7, 17, 57),
             ],
           ),

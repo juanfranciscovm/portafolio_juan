@@ -1,84 +1,66 @@
 import "package:flutter/material.dart";
 
-class CardTemplate2 extends StatefulWidget {
-  final String title;
+class CardTemplate extends StatelessWidget {
+  final String? title;
   final String url;
-  final String text;
+  final String? text;
 
-  const CardTemplate2({
-    required this.title,
-    required this.text,
-    required this.url,
-    super.key,
-  });
-
-  @override
-  State<CardTemplate2> createState() => _CardTemplateState();
-}
-
-class _CardTemplateState extends State<CardTemplate2> {
-  bool isExpanded = false;
+  const CardTemplate({this.title, this.text, required this.url, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Card(
-        clipBehavior: Clip.antiAlias,
-        elevation: 5,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        child: InkWell(
-          onTap: () => setState(() => isExpanded = !isExpanded),
-          child: Column(
-            children: [
-              Image.asset(
-                widget.url,
-                height: 180,
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      elevation: 5,
+      child: SingleChildScrollView(
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              width: 170,
+              height: 280,
+              child: FadeInImage(
+                placeholder: const AssetImage("assets/images/profile_pic.png"),
+                image: NetworkImage(url),
+                height: 250,
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 15,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      widget.title,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
+            ),
+
+            Expanded(
+              child: title == ""
+                  ? Container()
+                  : Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 20,
+                        vertical: 10,
+                      ),
+                      alignment: Alignment.centerLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            title!,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Newake",
+                              fontSize: 15,
+                            ),
+                          ),
+                          if (text != null)
+                            Text(
+                              text!,
+                              style: const TextStyle(
+                                fontFamily: "Coolvetica",
+                                fontSize: 12,
+                              ),
+                            ),
+                        ],
                       ),
                     ),
-                    Icon(
-                      isExpanded
-                          ? Icons.keyboard_arrow_up
-                          : Icons.keyboard_arrow_down,
-                    ),
-                  ],
-                ),
-              ),
-
-              AnimatedSize(
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.easeInOut,
-                child: isExpanded
-                    ? Padding(
-                        padding: const EdgeInsets.only(
-                          left: 20,
-                          right: 20,
-                          bottom: 20,
-                        ),
-                        child: Text(
-                          widget.text,
-                          style: const TextStyle(fontSize: 14),
-                        ),
-                      )
-                    : const SizedBox.shrink(),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

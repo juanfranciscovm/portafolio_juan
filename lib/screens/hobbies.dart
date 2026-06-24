@@ -6,6 +6,22 @@ class Hobbies extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('Hobbies')));
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: const Text(
+          "My hobbies",
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: "Newake",
+            fontSize: 35,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      body: SingleChildScrollView(),
+    );
   }
 }

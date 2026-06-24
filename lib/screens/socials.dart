@@ -5,6 +5,22 @@ class Socials extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('Socials')));
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: const Text(
+          "My socials",
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: "Newake",
+            fontSize: 35,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      body: SingleChildScrollView(),
+    );
   }
 }

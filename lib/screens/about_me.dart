@@ -87,6 +87,19 @@ class AboutMe extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(
+                  margin: const EdgeInsets.only(top: 45, left: 80, right: 80),
+                  padding: const EdgeInsets.only(
+                    top: 150,
+                    left: 20,
+                    right: 20,
+                    bottom: 25,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
                 ClipRRect(
                   //para redondear los bordes
                   borderRadius: BorderRadius.circular(25),

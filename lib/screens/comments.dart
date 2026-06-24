@@ -68,7 +68,7 @@ class _CommentsState extends State<Comments> {
                 const SizedBox(height: 40),
 
                 const Text(
-                  "Leave a\ncomment!",
+                  "Leave a\ncomment",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: "Newake",
