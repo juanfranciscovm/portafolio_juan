@@ -37,11 +37,11 @@ class FirmaDev extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 const Text(
-                  "Herramientas que\ndomino",
+                  "Herramientas y lenguajes que\ndomino",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Color.fromARGB(255, 7, 17, 57),
-                    fontSize: 30,
+                    color: Color.fromARGB(255, 45, 53, 86),
+                    fontSize: 28,
                     fontFamily: "Newake",
                   ),
                 ),

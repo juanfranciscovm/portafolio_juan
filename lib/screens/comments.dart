@@ -74,7 +74,6 @@ class _CommentsState extends State<Comments> {
                     fontFamily: "Newake",
                     color: Colors.white,
                     fontSize: 36,
-                    fontWeight: FontWeight.bold,
                   ),
                 ),
 
