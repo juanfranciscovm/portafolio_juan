@@ -96,7 +96,7 @@ class Hobbies extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
-                      "https://drive.google.com/uc?export=view&id=1Z6MDWL24A1gBZBCy-3p4H--RvQLssQx1",
+                      "https://drive.google.com/uc?export=view&id=1fRy1z7LSc4Rw18wYkSqisua6q04sG9nR",
                       height: 230,
                       width: double.infinity,
                       fit: BoxFit.cover,
