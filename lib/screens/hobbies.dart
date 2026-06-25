@@ -95,8 +95,13 @@ class Hobbies extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: Image.network(
-                      "https://drive.google.com/uc?export=view&id=1fRy1z7LSc4Rw18wYkSqisua6q04sG9nR",
+                    child: FadeInImage(
+                      placeholder: const AssetImage(
+                        "assets/images/placeholder_pc_corriendo.gif",
+                      ),
+                      image: const NetworkImage(
+                        "https://drive.google.com/uc?export=view&id=1fRy1z7LSc4Rw18wYkSqisua6q04sG9nR",
+                      ),
                       height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
@@ -167,8 +172,13 @@ class Hobbies extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: Image.network(
-                      "https://drive.google.com/uc?export=view&id=1C9t5kmr-5ubUKdtb13O8TSlSTPpI4x-2",
+                    child: FadeInImage(
+                      placeholder: const AssetImage(
+                        "assets/images/placeholder_pc_corriendo.gif",
+                      ),
+                      image: const NetworkImage(
+                        "https://drive.google.com/uc?export=view&id=1C9t5kmr-5ubUKdtb13O8TSlSTPpI4x-2",
+                      ),
                       height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
@@ -239,8 +249,13 @@ class Hobbies extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: Image.network(
-                      "https://drive.google.com/uc?export=view&id=1dXlGl9QW5zrM39xfT02tt78cBcQq71I0",
+                    child: FadeInImage(
+                      placeholder: const AssetImage(
+                        "assets/images/placeholder_pc_corriendo.gif",
+                      ),
+                      image: const NetworkImage(
+                        "https://drive.google.com/uc?export=view&id=1dXlGl9QW5zrM39xfT02tt78cBcQq71I0",
+                      ),
                       height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
@@ -311,8 +326,13 @@ class Hobbies extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: Image.network(
-                      "https://drive.google.com/uc?export=view&id=1p2pubWM1AvE9-WYvvFYGYQhLKUf2q19I",
+                    child: FadeInImage(
+                      placeholder: const AssetImage(
+                        "assets/images/placeholder_pc_corriendo.gif",
+                      ),
+                      image: const NetworkImage(
+                        "https://drive.google.com/uc?export=view&id=1p2pubWM1AvE9-WYvvFYGYQhLKUf2q19I",
+                      ),
                       height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,

@@ -20,7 +20,9 @@ class CardTemplate extends StatelessWidget {
               width: 170,
               height: 280,
               child: FadeInImage(
-                placeholder: const AssetImage("assets/images/profile_pic.png"),
+                placeholder: const AssetImage(
+                  "assets/images/placeholder_pc_corriendo.gif",
+                ),
                 image: NetworkImage(url),
                 height: 250,
                 width: double.infinity,

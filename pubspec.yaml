@@ -74,6 +74,7 @@ flutter:
     - assets/images/excel.png
     - assets/images/adobe.png
     - assets/images/firma.png
+    - assets/images/placeholder_pc_corriendo.gif
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
