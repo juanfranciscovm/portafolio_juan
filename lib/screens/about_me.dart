@@ -22,7 +22,7 @@ class AboutMe extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.menu_open, color: Colors.white, size: 30),
+          icon: const Icon(Icons.auto_stories, color: Colors.white, size: 30),
           onPressed: () {
             Navigator.push(
               context,
