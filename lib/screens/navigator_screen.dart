@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portafolio_juan/screens/app_screens.dart';
+import 'package:portafolio_juan/routes/app_routes.dart';
 import 'package:portafolio_juan/widgets/widgets.dart';
 
 class NavigatorScreen extends StatefulWidget {
@@ -11,16 +11,16 @@ class NavigatorScreen extends StatefulWidget {
 
 class _NavigatorState extends State<NavigatorScreen> {
   int _currentIndex = 0;
-  final List<Widget> _screens = [
-    const AboutMe(),
-    const Socials(),
-    const Hobbies(),
-    const Projects(),
-    const Comments(),
-  ];
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> screens = [
+      AppRoutes.routes["/about_me"]!(context),
+      AppRoutes.routes["/socials"]!(context),
+      AppRoutes.routes["/hobbies"]!(context),
+      AppRoutes.routes["/projects"]!(context),
+      AppRoutes.routes["/comments"]!(context),
+    ];
     return Scaffold(
       extendBody: true,
       backgroundColor: const Color.fromARGB(255, 7, 17, 57),
@@ -35,7 +35,7 @@ class _NavigatorState extends State<NavigatorScreen> {
           ),
         ),
 
-        child: IndexedStack(index: _currentIndex, children: _screens),
+        child: IndexedStack(index: _currentIndex, children: screens),
       ),
 
       bottomNavigationBar: NavBar(
