@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "package:portafolio_juan/screens/firma_dev.dart";
+import "package:portafolio_juan/routes/app_routes.dart";
 import "package:portafolio_juan/widgets/widgets.dart";
 
 class AboutMe extends StatelessWidget {
@@ -26,11 +26,14 @@ class AboutMe extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const FirmaDev()),
+              MaterialPageRoute(
+                builder: (context) => AppRoutes.routes['/firma_dev']!(context),
+              ),
             );
           },
         ),
       ),
+
       body: SingleChildScrollView(
         child: Column(
           children: [

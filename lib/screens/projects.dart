@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portafolio_juan/widgets/card_template.dart';
 import 'package:portafolio_juan/widgets/widgets.dart';
 
 class Projects extends StatelessWidget {
