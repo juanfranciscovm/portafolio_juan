@@ -158,7 +158,8 @@ class Socials extends StatelessWidget {
                             Color.fromARGB(255, 156, 217, 255),
                           ],
                         ),
-                        url: "https://linkedin.com/in/juanfranciscovm",
+                        url:
+                            "https://linkedin.com/in/juan-francisco-villarroel-monasterios-19357b419",
                       ),
                     ],
                   ),
