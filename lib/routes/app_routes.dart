@@ -11,5 +11,6 @@ class AppRoutes {
     "/hobbies": (BuildContext context) => const Hobbies(),
     "/comments": (BuildContext context) => const Comments(),
     "/projects": (BuildContext context) => const Projects(),
+    "/firma_dev": (BuildContext context) => const FirmaDev(),
   };
 }

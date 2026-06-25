@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "package:portafolio_juan/screens/firma_dev.dart";
 import "package:portafolio_juan/widgets/widgets.dart";
 
 class AboutMe extends StatelessWidget {
@@ -20,6 +21,15 @@ class AboutMe extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.menu_open, color: Colors.white, size: 30),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const FirmaDev()),
+            );
+          },
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
