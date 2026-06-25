@@ -40,7 +40,7 @@ class Hobbies extends StatelessWidget {
 
           children: [
             AccordionSection(
-              //natacion
+              //natación
               isOpen: false,
               headerPadding: const EdgeInsets.only(
                 left: 15,
@@ -97,7 +97,7 @@ class Hobbies extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
                       "https://drive.google.com/uc?export=view&id=1fRy1z7LSc4Rw18wYkSqisua6q04sG9nR",
-                      height: 230,
+                      height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
@@ -169,7 +169,7 @@ class Hobbies extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
                       "https://drive.google.com/uc?export=view&id=1C9t5kmr-5ubUKdtb13O8TSlSTPpI4x-2",
-                      height: 230,
+                      height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
@@ -241,7 +241,7 @@ class Hobbies extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
                       "https://drive.google.com/uc?export=view&id=1dXlGl9QW5zrM39xfT02tt78cBcQq71I0",
-                      height: 230,
+                      height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
@@ -313,14 +313,14 @@ class Hobbies extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
                       "https://drive.google.com/uc?export=view&id=1p2pubWM1AvE9-WYvvFYGYQhLKUf2q19I",
-                      height: 230,
+                      height: 218,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 15),
                   const Text(
-                    "Me fascina aprender nuevos idiomas. En 2024 me certifiqué de C1 en inglés y deseo aprender francés, actualmente estoy aprendiéndolo poco a poco.",
+                    "Me fascina aprender nuevos idiomas. En 2024 me certifiqué de C1 en inglés y deseo aprender francés, actualmente estoy en ese proceso.",
                     style: TextStyle(fontSize: 15, color: Colors.black),
                   ),
                 ],
