@@ -34,21 +34,21 @@ class Projects extends StatelessWidget {
                 children: [
                   CardTemplate(
                     url:
-                        "https://drive.google.com/uc?export=view&id=1kgtmdDLqypOF-K5U-5laull_ElQXDUKq",
+                        "https://drive.google.com/uc?export=view&id=12XLuAFVZpa9dDEiUSEYtPqh-FBkC2Uns",
                     title: "Flavio’s Tank Adventures",
                     text:
                         "\n▸ Juego de exploración y\nbatalla de tanques por niveles.\n▸ Hecho en C# con Windows Forms.\n▸ Presentado en la feria de ingeniería de abril 2026 de la UNIMAR.",
                   ),
                   CardTemplate(
                     url:
-                        "https://drive.google.com/uc?export=view&id=1kgtmdDLqypOF-K5U-5laull_ElQXDUKq",
+                        "https://drive.google.com/uc?export=view&id=1kQXs2qas7xyZ-gF79Od_Lr63J2D-5mLK",
                     title: "Capitán Folder",
                     text:
                         "\n\n▸ Herramienta de organización, filtrado y búsqueda en archivos .txt y .xlsx.\n▸ Hecho en Python.\n▸ Presentado en la feria de ingeniería de diciembre 2025 de la UNIMAR.",
                   ),
                   CardTemplate(
                     url:
-                        "https://drive.google.com/uc?export=view&id=1kgtmdDLqypOF-K5U-5laull_ElQXDUKq",
+                        "https://drive.google.com/uc?export=view&id=1ajX6_r4_gGw4CHUgH6cmjLb0OcR6Is0I",
                     title: "Sistema de gestión de gimnasio",
                     text:
                         "\n\n▸ Sistema de gestión de membresías y entrenadores para un gimnasio.\n▸ Hecho en C# con Windows Forms.",
