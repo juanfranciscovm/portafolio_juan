@@ -185,7 +185,7 @@ class Socials extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              url: "https://instagram.com/juanfranciscovm",
+              url: "https://instagram.com/juanfranciscov.m",
             ),
           ],
         ),
